@@ -16,6 +16,8 @@
     --shrikhand: "Shrikhand", serif;
     --inter: "Inter", sans-serif;
     --roboto: "Roboto", sans-serif;
+    --max-width: 354px;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 a h1 {
@@ -41,7 +43,7 @@ header nav{
 }
 
 header{
-    max-width: 354px;
+    max-width: var(--max-width);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -55,6 +57,59 @@ header{
     padding: 10px;
 }
 
+/* Section1 */
+
+.section1{
+    background: var(--light-orange);
+    color: var(--anthracite);
+}
+
+.section1 div{
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section1 div h2{
+    padding: 20px 6px;
+}
+
+.section1 div p{
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+.section1 div input{
+    width: 82%;
+    background: var(--light-orange);
+    border: none;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 36px;
+}
+
+.section1 div input::placeholder{
+    color: var(--anthracite);
+    font-size: 15px;
+}
+
+.section1 a{
+    background: linear-gradient( var(--dark-orange), var(--light-orange));
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 40px 0;
+    box-shadow: var(--box-shadow);
+    transform: scale(1.05);
+}
+
+.section1 a:hover{
+    color: var(--black);
+    font-weight: 300;
+}
+
 /* Footer */
 
 footer{
@@ -62,7 +117,7 @@ footer{
 }
 
 footer div{
-    max-width: 354px;
+    max-width: var(--max-width);
     margin: auto;
 }
 
