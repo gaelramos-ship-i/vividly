@@ -1,0 +1,85 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+
+/* Général */
+* {
+    margin: 0;
+    font-family: var(--roboto);
+}
+
+:root {
+    --anthracite: #252525;
+    --dark-orange: #ff7800;
+    --light-orange: #ffae00;
+    --black: #000;
+    --white: #fff;
+    --shrikhand: "Shrikhand", serif;
+    --inter: "Inter", sans-serif;
+    --roboto: "Roboto", sans-serif;
+}
+
+a h1 {
+    font-family: "Shrikhand", serif;
+    color: var(--black);
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.3s ease-out;
+}
+
+a:hover{
+    color: var(--dark-orange);
+    transition: 0.3s ease-out;
+}
+
+/* Header */
+
+header nav{
+    display: none;
+}
+
+header{
+    max-width: 354px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#burger{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}
+
+/* Footer */
+
+footer{
+    background: #252525;
+}
+
+footer div{
+    max-width: 354px;
+    margin: auto;
+}
+
+footer div h2{
+    font-family: var(--shrikhand);
+    color: #fff;
+    font-weight: 400;
+    padding: 10px;
+}
+
+footer div ul{
+    list-style: none;
+    line-height: 2rem;
+    padding: 0 0 10px 10px;
+}
+
+footer div a{
+    color: var(--white);
+    font-weight: 300;
+}
