@@ -110,6 +110,41 @@ header{
     font-weight: 300;
 }
 
+/* Section2 */
+
+.section2{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0px 4px 10px 4px;
+}
+
+.section2 h2{
+    padding: 28px 10px 8px;
+}
+
+.section2 h3{
+    font-size: 16px;
+}
+
+.section2 article{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.section2 p{
+    position: absolute;
+    left: -10px;
+    background: var(--dark-orange);
+    padding: 5px 8px;
+    border-radius: 20px;
+    color: var(--white);
+    margin: -5px 0;
+}
+
 /* Footer */
 
 footer{
