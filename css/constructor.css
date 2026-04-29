@@ -119,6 +119,24 @@ header {
     margin: 0 10px 20px;
 }
 
+/* Section 3 */
+
+.section3{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 10px 30px;
+    border-bottom: 1.5px solid #ff7800;
+}
+
+.section3 h2{
+    padding: 20px 0;
+}
+
+iframe{
+    width: 100%;
+    height: 280px;
+}
+
 /* Footer */
 
 footer {
