@@ -222,7 +222,7 @@ header {
 #label2,
 #label3,
 #label4 {
-    background-image: url('img/thumbs-up-regular.svg');
+    background-image: url('/img/thumbs-up-regular.svg');
     width: 24px;
     height: 36px;
     background-repeat: no-repeat;
@@ -234,7 +234,7 @@ header {
 #recommended2:checked+#label2,
 #recommended3:checked+#label3,
 #recommended4:checked+#label4 {
-    background-image: url('img/thumbs-up-solid.svg');
+    background-image: url('/img/thumbs-up-solid.svg');
 }
 
 .btn.ml30 {
