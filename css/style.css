@@ -125,13 +125,17 @@ header {
     font-size: 16px;
 }
 
-.section2 article {
+.section2 li{
     position: relative;
     display: flex;
     padding: 20px;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     margin: 20px 10px;
+}
+
+.section2 ul{
+    padding: 0;
 }
 
 .section2 p {
