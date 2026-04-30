@@ -53,38 +53,38 @@ header {
 
 /* Section1 */
 
-.section1{
+.section1 {
     max-width: var(--max-width);
     margin: auto;
     padding-bottom: 10px;
 }
 
-.section1 img{
+.section1 img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-.section1 h2{
+.section1 h2 {
     padding: 20px;
 }
 
-.section1 hr{
-    margin:0 10px;
+.section1 hr {
+    margin: 0 10px;
     height: 1px;
     background: var(--dark-orange);
     border: none;
     margin-bottom: 10px;
 }
 
-.section1 div{
+.section1 div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;
 }
 
-#label{
+#label {
     background-image: url('/img/thumbs-up-regular.svg');
     width: 24px;
     height: 36px;
@@ -93,48 +93,140 @@ header {
     margin-right: 10px;
 }
 
-#recommended:checked + #label {
+#recommended:checked+#label {
     background-image: url('/img/thumbs-up-solid.svg');
 }
 
-#recommended{
+#recommended {
     display: none;
 }
 
 /* Section2 */
 
-.section2{
+.section2 {
     max-width: var(--max-width);
     margin: auto;
     border-top: 1.5px solid #ff7800;
     border-bottom: 1.5px solid #ff7800;
 }
 
-.section2 h2{
+.section2 h2 {
     padding: 20px 0;
     margin: 0 10px;
 }
 
-.section2 p{
+.section2 p {
     margin: 0 10px 20px;
 }
 
 /* Section 3 */
 
-.section3{
+.section3 {
     max-width: var(--max-width);
     margin: auto;
     padding: 0 10px 30px;
     border-bottom: 1.5px solid #ff7800;
 }
 
-.section3 h2{
+.section3 h2 {
     padding: 20px 0;
 }
 
-iframe{
+iframe {
     width: 100%;
     height: 280px;
+}
+
+/* .section4 */
+
+.section4 {
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+}
+
+.section4 h3 {
+    padding: 0px 4px 20px 10px;
+    text-align: left;
+}
+
+.section4 h2 {
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.section4 div:nth-child(2),
+.section4 div:nth-child(3),
+.section4 div:nth-child(5) {
+    display: flex;
+    align-items: center;
+    margin: 0px 4px 20px 10px;
+    margin-bottom: 20px;
+}
+
+.section4 form div:nth-child(2) {
+    padding: 0;
+}
+
+.section4 div i {
+    color: var(--light-orange);
+    font-size: 20px;
+}
+
+.section4 div:nth-child(5) i {
+    color: var(--black);
+    padding-bottom: 10px;
+}
+
+.section4 div:nth-child(5) {
+    justify-content: space-around;
+}
+
+form div {
+    display: block;
+    padding: 0 14px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 1.5px solid var(--dark-orange);
+    padding: 10px 0px 10px 6px;
+    margin-bottom: 20px;
+}
+
+form textarea {
+    height: 168px;
+}
+
+.section4 a i {
+    transition: 0.3s ease-out;
+}
+
+.section4 a:hover i {
+    color: var(--light-orange);
+    transition: 0.3s ease-out;
+}
+
+#politic {
+    width: 4%;
+    margin-right: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.section4 form button {
+    background: linear-gradient(var(--dark-orange), var(--light-orange));
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    margin: 20px 0 30px 0;
+}
+
+.section4 form button:hover{
+    scale: 1.01;
 }
 
 /* Footer */
