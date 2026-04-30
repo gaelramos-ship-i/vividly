@@ -51,6 +51,39 @@ header {
     padding: 20px;
 }
 
+.loader {
+    background: var(--light-orange);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.spin {
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--white);
+    border-bottom-color: var(--dark-orange);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: spin 1s linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Section1 */
 
 .section1 {
@@ -85,7 +118,7 @@ header {
 }
 
 #label {
-    background-image: url('/img/thumbs-up-regular.svg');
+    background-image: url('../img/thumbs-up-regular.svg');
     width: 24px;
     height: 36px;
     background-repeat: no-repeat;
@@ -94,7 +127,7 @@ header {
 }
 
 #recommended:checked+#label {
-    background-image: url('/img/thumbs-up-solid.svg');
+    background-image: url('../img/thumbs-up-solid.svg');
 }
 
 #recommended {
@@ -299,42 +332,42 @@ footer div a {
         --max-width: 1024px;
     }
 
-    header{
+    header {
         max-width: 1440px;
         justify-content: center;
         position: relative;
     }
 
-    #burger{
+    #burger {
         display: none;
     }
 
-    #arrow{
+    #arrow {
         position: absolute;
         left: 6%;
     }
 
-    header nav{
+    header nav {
         display: block;
         position: absolute;
         right: 6%;
     }
 
-    header nav ul{
+    header nav ul {
         list-style: none;
         display: flex;
         gap: 40px;
         padding: 0;
     }
 
-    footer div{
+    footer div {
         display: flex;
         align-items: center;
         gap: 20px;
         justify-content: center;
     }
 
-    footer nav ul{
+    footer nav ul {
         display: flex;
         gap: 40px;
         padding: 0;

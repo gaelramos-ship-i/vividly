@@ -10,11 +10,14 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="spin"></div>
+    </div>
     <header>
         <a href="/">
             <i id="arrow" class="fa-solid fa-arrow-left"></i>
         </a>
-        <a href="/">
+        <a id="start" href="/">
             <h1>Vivildy</h1>
         </a>
         <nav>
@@ -117,6 +120,18 @@
             </nav>
         </div>
     </footer>
+
+    <script>
+        // Masquer le loader après 2 secondes
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loader = document.querySelector('.loader');
+                if (loader) {
+                    loader.classList.add('hidden');
+                }
+            }, 2000); // 2000 ms = 2 secondes
+        });
+    </script>
 </body>
 
 </html>
