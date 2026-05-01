@@ -36,6 +36,51 @@ a:hover {
     transition: 0.3s ease-out;
 }
 
+.loader {
+    background: var(--light-orange);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 2;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.spin {
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--white);
+    border-bottom-color: var(--dark-orange);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: spin 1s linear 4;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* Header */
 
 header nav {
