@@ -126,7 +126,7 @@ header {
 }
 
 .section1 div input {
-    width: 82%;
+    width: 80%;
     background: var(--light-orange);
     border: none;
     box-shadow: var(--box-shadow);
